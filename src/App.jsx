@@ -628,70 +628,70 @@ function App() {
             </section>
 
             {/* Case Studies Section */}
-            <section id="case-studies" className="py-32 relative">
-                <div className="container mx-auto px-6">
-                    <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                Başarılı Endüstriyel Otomasyon Projeleri
-              </span>
-                        </h2>
-                        <p className="text-xl text-gray-400">Fortune 500 şirketleri neden Enes Otomasyon'u tercih
-                            ediyor?</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-                        {caseStudies.map((study, index) => (<article key={index} className="group relative">
-                                <div
-                                    className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <div
-                                    className="relative bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-colors">
-                                    <h3 className="text-xl font-bold mb-4">{study.title}</h3>
-                                    <div
-                                        className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">
-                                        {study.increase}
-                                    </div>
-                                    <p className="text-gray-400">{study.metric}</p>
-                                    <div className="mt-6 pt-6 border-t border-white/10">
-                                        <span
-                                            className="text-sm text-purple-400">PLC • SCADA • HMI • AI Integration</span>
-                                    </div>
-                                </div>
-                            </article>))}
-                    </div>
-
-                    {/* Customer Testimonials */}
-                    <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        {testimonials.map((testimonial, index) => (<article key={index} className="group relative">
-                                <div
-                                    className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <div
-                                    className="relative bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-colors">
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <div className="text-5xl">{testimonial.image}</div>
-                                        <div>
-                                            <div className="flex mb-2">
-                                                {[...Array(testimonial.rating)].map((_, i) => (
-                                                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current"/>))}
-                                            </div>
-                                            <div className="font-semibold">{testimonial.name}</div>
-                                            <div className="text-sm text-gray-400">{testimonial.company}</div>
-                                        </div>
-                                    </div>
-
-                                    <blockquote className="text-gray-300 mb-6 italic">"{testimonial.text}"</blockquote>
-
-                                    <div className="pt-6 border-t border-white/10">
-                                        <div
-                                            className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                                            {testimonial.result}
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>))}
-                    </div>
-                </div>
-            </section>
+            {/*<section id="case-studies" className="py-32 relative">*/}
+            {/*    <div className="container mx-auto px-6">*/}
+            {/*        <div className="text-center mb-20">*/}
+            {/*            <h2 className="text-4xl md:text-6xl font-bold mb-6">*/}
+            {/*  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">*/}
+            {/*    Başarılı Endüstriyel Otomasyon Projeleri*/}
+            {/*  </span>*/}
+            {/*            </h2>*/}
+            {/*            <p className="text-xl text-gray-400">Fortune 500 şirketleri neden Enes Otomasyon'u tercih*/}
+            {/*                ediyor?</p>*/}
+            {/*        </div>*/}
+            
+            {/*        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">*/}
+            {/*            {caseStudies.map((study, index) => (<article key={index} className="group relative">*/}
+            {/*                    <div*/}
+            {/*                        className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>*/}
+            {/*                    <div*/}
+            {/*                        className="relative bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-colors">*/}
+            {/*                        <h3 className="text-xl font-bold mb-4">{study.title}</h3>*/}
+            {/*                        <div*/}
+            {/*                            className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">*/}
+            {/*                            {study.increase}*/}
+            {/*                        </div>*/}
+            {/*                        <p className="text-gray-400">{study.metric}</p>*/}
+            {/*                        <div className="mt-6 pt-6 border-t border-white/10">*/}
+            {/*                            <span*/}
+            {/*                                className="text-sm text-purple-400">PLC • SCADA • HMI • AI Integration</span>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </article>))}*/}
+            {/*        </div>*/}
+            
+            {/*        /!* Customer Testimonials *!/*/}
+            {/*        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">*/}
+            {/*            {testimonials.map((testimonial, index) => (<article key={index} className="group relative">*/}
+            {/*                    <div*/}
+            {/*                        className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>*/}
+            {/*                    <div*/}
+            {/*                        className="relative bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-colors">*/}
+            {/*                        <div className="flex items-center gap-4 mb-6">*/}
+            {/*                            <div className="text-5xl">{testimonial.image}</div>*/}
+            {/*                            <div>*/}
+            {/*                                <div className="flex mb-2">*/}
+            {/*                                    {[...Array(testimonial.rating)].map((_, i) => (*/}
+            {/*                                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-current"/>))}*/}
+            {/*                                </div>*/}
+            {/*                                <div className="font-semibold">{testimonial.name}</div>*/}
+            {/*                                <div className="text-sm text-gray-400">{testimonial.company}</div>*/}
+            {/*                            </div>*/}
+            {/*                        </div>*/}
+            
+            {/*                        <blockquote className="text-gray-300 mb-6 italic">"{testimonial.text}"</blockquote>*/}
+            
+            {/*                        <div className="pt-6 border-t border-white/10">*/}
+            {/*                            <div*/}
+            {/*                                className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">*/}
+            {/*                                {testimonial.result}*/}
+            {/*                            </div>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </article>))}*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
 
             {/* CTA Section */}
